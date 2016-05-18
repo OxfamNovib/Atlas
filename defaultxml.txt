@@ -1,16 +1,52 @@
-<?xml version='1.0' encoding='utf-8'?>
-<customer-database generated-datetime="[[CREATIONDATETIME]]">
+<?xml version="1.0" encoding="UTF-8"?>
+<iati-activities version="2.02" generated-datetime="2016-05-04T11:19:03">
 <!--REPEAT-->
-  <customer id="[[CustomerID]]">
-    <name>
-      [[Name]]
-    </name>
-    <birthday>
-      [[DateOfBirth]]
-    </birthday>
-    <occupation>
-      [[Occupation]]
-    </occupation>
-  </customer>
+	<iati-activity xml:lang="en" last-updated-datetime="2016-05-04T:00:00" hierarchy="2" default-currency="EUR">
+		<iati-identifier>[[iatiidentifier]]</iati-identifier>
+		<reporting-org ref="[[reportingorg]]" secondary-reporter="0" type="21">
+			<narrative>[[Affiliate]]</narrative>
+		</reporting-org>
+		<title>
+			<narrative>[[narrativetitle]]</narrative>
+		</title>
+		<description type="1">
+			<narrative>[[narrativedescription]]</narrative>
+		</description>
+		<participating-org ref="[[participatingorg]]" role="4" type="21">
+			<narrative>[[participatingorg]]</narrative>
+		</participating-org>
+		<activity-status code="2"/>
+		<activity-date iso-date="[[actstartdate]]" type="2">
+			<narrative>start-actual</narrative>
+		</activity-date>
+		<activity-date iso-date="[[actenddate]]" type="4">
+			<narrative>end-actual</narrative>
+		</activity-date>
+		<recipient-country code="[[geocode]]">
+			<narrative>[[countrynarrative]]</narrative>
+		</recipient-country>
+		<sector code="1" percentage="[[aim1]]" vocabulary="99" vocabulary-uri="http://www.oxfamnovib.nl/Mission-and-vision"/>
+		<sector code="2" percentage="[[aim2]]" vocabulary="99" vocabulary-uri="http://www.oxfamnovib.nl/Mission-and-vision"/>
+		<sector code="3" percentage="[[aim3]]" vocabulary="99" vocabulary-uri="http://www.oxfamnovib.nl/Mission-and-vision"/>
+		<sector code="4" percentage="[[aim4]]" vocabulary="99" vocabulary-uri="http://www.oxfamnovib.nl/Mission-and-vision"/>
+		<sector code="5" percentage="[[aim5]]" vocabulary="99" vocabulary-uri="http://www.oxfamnovib.nl/Mission-and-vision"/>
+		<budget type="2">
+			<period-start iso-date="[[budgetstartdate]]"/>
+			<period-end iso-date="[[budgetenddate]]"/>
+			<value currency="EUR" value-date="[[budgetstartdate]]">[[Budget]]</value>
+		</budget>
+		<transaction>
+			<transaction-type code="3"/>
+			<transaction-date iso-date="[[transactiondate]]"/>
+			<value value-date="[[transactiondate]]">[[transaction]]</value>
+			<description>
+				<narrative>Expenditure</narrative>
+			</description>
+			<receiver-org ref=" ">
+				<narrative>[[participatingorg]]</narrative>
+			</receiver-org>
+		</transaction>
+		<legacy-data name="oxfamnovib-view-type" value="INT"/>
+	</iati-activity>
 <!--ENDREPEAT-->
-</customer-database>
+</iati-activities>
