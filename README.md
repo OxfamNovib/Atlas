@@ -2,7 +2,7 @@
 Convert each row in a csv file to xml as defined by a custom schematic.  
 Released under the MIT license.  
 [Live version](http://ep-nuffic.github.io/csv2xml/).
-[live version](http://OxfamNovib.github.io/csv2xml/).
+[Live version](http://OxfamNovib.github.io/Atlas/csv2xml/).
 
 ##Limitations
 * Separator must be a **semicolon**
