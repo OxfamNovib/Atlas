@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<iati-activities version="2.02" generated-datetime="2016-05-04T11:19:03">
+<iati-activities version="2.03" generated-datetime="2021-09-17T11:19:03">
 <!--REPEAT-->
-	<iati-activity xml:lang="en" last-updated-datetime="2016-05-04T:00:00" hierarchy="2" default-currency="EUR">
+	<iati-activity xml:lang="en" last-updated-datetime="2021-09-17T:00:00" hierarchy="2" default-currency="EUR">
 		<iati-identifier>[[iatiidentifier]]</iati-identifier>
 		<reporting-org ref="[[reportingorg]]" secondary-reporter="0" type="21">
 			<narrative>[[Affiliate]]</narrative>
@@ -25,6 +25,11 @@
 		<recipient-country code="[[geocode]]">
 			<narrative>[[countrynarrative]]</narrative>
 		</recipient-country>
+		<location>
+                        <location-reach code="1"/>
+                        <point srsName="http://opengis.net/def/crs/EPSG/0/4326"><pos>[[GPScode1]] [[GPScode2]]</pos>
+                        </point><exactness code="2"/>
+                </location>
 		<sector code="1" percentage="[[aim1]]" vocabulary="99" vocabulary-uri="http://www.oxfamnovib.nl/Mission-and-vision"/>
 		<sector code="2" percentage="[[aim2]]" vocabulary="99" vocabulary-uri="http://www.oxfamnovib.nl/Mission-and-vision"/>
 		<sector code="3" percentage="[[aim3]]" vocabulary="99" vocabulary-uri="http://www.oxfamnovib.nl/Mission-and-vision"/>
